@@ -13,11 +13,13 @@ struct ContentView: View {
     @Query private var items: [Item]
 
     var body: some View {
+        
         NavigationSplitView {
             List {
+                Text("Hello")
                 ForEach(items) { item in
                     NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        Text("dsfdafdsf at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
                     } label: {
                         Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
                     }
