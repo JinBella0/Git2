@@ -20,6 +20,7 @@ struct ContentView: View {
                 Text("Hello")
                 Text("Hello")
                 Text("Hello")
+                Text("벨라 휴가중인데 이만큼 해쏘 ㅠㅠㅠ 왜 안나왕 ㅏ앙 ㅇㄴㅇㄹ나오란알")
                 ForEach(items) { item in
                     NavigationLink {
                         Text("dsfdafdsf at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
